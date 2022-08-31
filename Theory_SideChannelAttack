@@ -1,0 +1,33 @@
+In computer security, a side-channel attack is any attack based on information gained from the implementation of a computer system, rather than weaknesses in the implemented algorithm itself.
+
+“
+Side channel attacks ” are attacks that are based on “Side Channel Information”. 
+Side channel information is information that can be retrieved from the encryption device that is neither the plaintext to be encrypted nor the ciphertext resulting from the encryption process. 
+
+side-channel attacks consist in performing a statistical anal-ysis of the web traffic to gain sensitive information about a client
+
+Side-channel leaks appear each time an interaction between a user and a website requires transmission of information packets containing relevant data.
+
+Assuming that the connection between the client and the server is encrypted (using a protocol such as HTTPS), three parameters of the packet flow can be observed:
+	– lengths of individual packets;
+	– directions of packet flow (client to server or server to client);
+	– times of packets’ departure and arrival 1 .
+	
+In particular, by analyzing packet lengths associated to different characters, it is possible to guess the most likely word that the user
+typed in, and thus uncover sensitive information about his search history.
+
+ The general approach is to examine the properties of packet sequences sent between a client and a server, in order to infer a relationship between these properties and the exchanged information.
+
+The search box operates using AJAX to display suggestions to the client as he types search terms, and the attack again consists of intercepting the exchanged packets in order to infer the user’s query.
+
+The authors have assumed a deter-ministic relationship between input letters and exchanged packet lengths .
+
+The query can therefore be deduced by pre-computing every possible query and then comparing the captured packets using this information.
+
+SSL/TLS is used in every browser worldwide to provide https ( http secure ) functionality. 
+
+Knowledge of encrypted packet lengths can be used to deduce the user’s search query, even if the packet sizes are randomized
+
+
+
+
